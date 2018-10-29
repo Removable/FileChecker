@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileChecker", "FileChecker\FileChecker.csproj", "{51819227-96FB-4C7A-8F58-C4DC29B759B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextMenuServer", "ContextMenuServer\ContextMenuServer.csproj", "{515A26D3-5189-47C8-B72F-F715BC21B315}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{51819227-96FB-4C7A-8F58-C4DC29B759B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51819227-96FB-4C7A-8F58-C4DC29B759B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51819227-96FB-4C7A-8F58-C4DC29B759B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515A26D3-5189-47C8-B72F-F715BC21B315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515A26D3-5189-47C8-B72F-F715BC21B315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515A26D3-5189-47C8-B72F-F715BC21B315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515A26D3-5189-47C8-B72F-F715BC21B315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
