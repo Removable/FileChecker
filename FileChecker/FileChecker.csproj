@@ -104,11 +104,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ContextMenuServer\ContextMenuServer.csproj">
-      <Project>{515a26d3-5189-47c8-b72f-f715bc21b315}</Project>
-      <Name>ContextMenuServer</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
