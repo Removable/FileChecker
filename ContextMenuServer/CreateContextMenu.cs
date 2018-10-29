@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -41,6 +43,10 @@ namespace ContextMenuServer
         private void Item_Click(object sender, EventArgs e)
         {
             var filePath = SelectedItemPaths.First();
+            var currentPath = Environment.CurrentDirectory;
+            var appName = "FileChecker.exe";
+            var fullPath = Path.Combine(currentPath, appName);
+            Process.Start(fullPath, filePath);
         }
     }
 }

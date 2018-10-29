@@ -1,26 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using FileChecker.Util;
 using Microsoft.Win32;
 
 namespace FileChecker
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    ///     MainWindow.xaml 的交互逻辑
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -31,18 +21,18 @@ namespace FileChecker
         }
 
         /// <summary>
-        /// MD5计算结果双击事件
+        ///     MD5计算结果双击事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void SelectText(object sender, MouseButtonEventArgs e)
         {
-            var s = (TextBox)sender;
+            var s = (TextBox) sender;
             s.SelectAll();
         }
 
         /// <summary>
-        /// 选择文件
+        ///     选择文件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -51,18 +41,15 @@ namespace FileChecker
             var open = new OpenFileDialog();
             if (open.ShowDialog() == true)
             {
-                string filePath = open.FileName;
-                if (!File.Exists(filePath))
-                {
-                    MessageBox.Show("文件不存在！");
-                }
+                var filePath = open.FileName;
+                if (!File.Exists(filePath)) MessageBox.Show("文件不存在！");
 
                 CalcFileHash(filePath);
             }
         }
 
         /// <summary>
-        /// 获得文件哈希值
+        ///     获得文件哈希值
         /// </summary>
         /// <param name="filePath"></param>
         public void CalcFileHash(string filePath)
@@ -110,6 +97,20 @@ namespace FileChecker
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 主窗体加载事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.Properties["ArbitraryArgName"] != null)
+            {
+                var fName = Application.Current.Properties["ArbitraryArgName"].ToString(); //ArbitraryArgName要与APP里面设置的名字相同
+                CalcFileHash(fName);
             }
         }
     }
