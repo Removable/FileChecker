@@ -61,6 +61,10 @@ namespace FileChecker
             }
         }
 
+        /// <summary>
+        /// 获得文件哈希值
+        /// </summary>
+        /// <param name="filePath"></param>
         public void CalcFileHash(string filePath)
         {
             try

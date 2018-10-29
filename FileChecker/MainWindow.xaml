@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileChecker"
         mc:Ignorable="d"
-        Title="文件校验" Height="305.034" Width="483.893" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="文件校验" Height="313.088" Width="483.893" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="TbFilePath" Height="23" Margin="30,39,145,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False"/>
         <Button x:Name="BtnFilePath" Content="选择文件" Margin="373,39,30,0" VerticalAlignment="Top" Height="23"/>
-        <GroupBox x:Name="GroupBox" Header="计算结果" Margin="10,103,10,10">
+        <GroupBox x:Name="GroupBox" Header="计算结果" Margin="10,103,10,20">
             <Grid>
-                <TextBox x:Name="TbMd5" Height="23" Margin="88,24,44,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="true" FontWeight="Bold" MouseDoubleClick="SelectText"/>
-                <TextBox x:Name="TbSha1" Height="23" Margin="88,87,44,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="False" FontWeight="Bold" MouseDoubleClick="SelectText"/>
+                <TextBox x:Name="TbMd5" Height="23" Margin="88,24,44,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="True" FontWeight="Bold" MouseDoubleClick="SelectText"/>
+                <TextBox x:Name="TbSha1" Height="23" Margin="88,87,44,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="True" FontWeight="Bold" MouseDoubleClick="SelectText"/>
                 <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="38,32,0,0" TextWrapping="Wrap" Text="MD5" VerticalAlignment="Top" RenderTransformOrigin="-0.989,0.4"/>
                 <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="38,95,0,0" TextWrapping="Wrap" Text="SHA1" VerticalAlignment="Top" RenderTransformOrigin="-0.68,0.296"/>
             </Grid>
         </GroupBox>
-        <ProgressBar x:Name="Pbar" HorizontalAlignment="Left" Height="20" Margin="30,74,0,0" VerticalAlignment="Top" Width="418" Visibility="Visible"/>
+        <ProgressBar x:Name="Pbar" HorizontalAlignment="Left" Height="20" Margin="30,74,0,0" VerticalAlignment="Top" Width="418" Visibility="Hidden"/>
     </Grid>
 </Window>
