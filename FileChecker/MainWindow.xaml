@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileChecker"
         mc:Ignorable="d"
-        Title="文件校验" Height="313.088" Width="483.893" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="MainWindow_OnLoaded">
+        Title="文件校验" Height="313.088" Width="483.893" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="MainWindow_OnLoaded" Icon="pack://siteoforigin:,,,/Resources/CalcIcon.ico">
     <Grid>
         <TextBox x:Name="TbFilePath" Height="23" Margin="30,39,145,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False"/>
         <Button x:Name="BtnFilePath" Content="选择文件" Margin="373,39,30,0" VerticalAlignment="Top" Height="23"/>

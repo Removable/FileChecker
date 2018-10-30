@@ -19,7 +19,7 @@ namespace ContextMenuServer
         /// <returns></returns>
         protected override bool CanShowMenu()
         {
-            if (SelectedItemPaths.Count() == 1)
+            if (SelectedItemPaths.Count() == 1 && File.Exists(SelectedItemPaths.First()))
                 return true;
             else
                 return false;
@@ -33,13 +33,18 @@ namespace ContextMenuServer
         {
             var menu = new ContextMenuStrip();
             //要显示的文字
-            var item = new ToolStripMenuItem("校验文件哈希值...");
+            var item = new ToolStripMenuItem("校验哈希值...");
             //添加事件
             item.Click += Item_Click;
             menu.Items.Add(item);
             return menu;
         }
 
+        /// <summary>
+        /// 右键菜单点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Item_Click(object sender, EventArgs e)
         {
             var filePath = SelectedItemPaths.First();

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileChecker", "FileChecker\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextMenuServer", "ContextMenuServer\ContextMenuServer.csproj", "{515A26D3-5189-47C8-B72F-F715BC21B315}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FileCheckerSetup", "FileCheckerSetup\FileCheckerSetup.vdproj", "{6B66B46E-A7F1-453F-A500-7335F55CC9AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{515A26D3-5189-47C8-B72F-F715BC21B315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515A26D3-5189-47C8-B72F-F715BC21B315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515A26D3-5189-47C8-B72F-F715BC21B315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B66B46E-A7F1-453F-A500-7335F55CC9AC}.Debug|Any CPU.ActiveCfg = Debug
+		{6B66B46E-A7F1-453F-A500-7335F55CC9AC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
